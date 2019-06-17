@@ -23,3 +23,6 @@
   
   Once this is completed, the X and y can be set. X = risk_df.drop('risk_score') and y = risk_df['risk_score']. Train-test-split to create training and test data, and then run regressions to see which model fits the best.
   
+  There are a few other items of note. 12 out of 22 first offenders were born after their disposition date. I understand that this is fake data, but if this were actual data, something would need to be done about those values in order to run an effective model. Also, every single criminal offense occurred at 575 Maple Street in each respective city across the country. Doesn't sound like a healthy place to visit! There were also some values in the properties columns that I would combine in the addresses, as the house number, street name, street prefix, and street suffix were all separated into columns. Putting them all together as they are listed in the addresses column would help to eliminate variables that could be redundant.
+  
+  There is so much more that I would do if I were out of time! This exercise has been extremely satisfying, and one that I hope to continue working on in my spare time.
